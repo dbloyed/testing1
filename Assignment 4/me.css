@@ -1,0 +1,69 @@
+h1, h3, h4 {
+  color: #103a89;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #1858cd;
+  color: black;
+}
+
+td {
+color: #5f91ec;
+}
+
+#container {
+    margin: 0 auto;
+    width: 50%;
+}
+#accordion input {
+	display: none;
+}
+#accordion label {
+	background: #A9A9A9;
+	border-radius: .25em;
+	cursor: pointer;
+	display: block;
+	margin-bottom: .325em;
+	padding: .125em .25em;
+	z-index: 20;
+}
+#accordion label:hover {
+	background: #FFF;
+}
+
+#accordion input:checked + label {
+	background: #000;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: white;
+	margin-bottom: 0;
+}
+#accordion article {
+	background: #FFF;
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+}
+#accordion article p {
+	padding: 1em;
+}
+#accordion input:checked article {
+}
+#accordion input:checked ~ article {
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: .125em;
+}
